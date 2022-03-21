@@ -6,14 +6,14 @@ const NavBar = (props) => {
   const { onLogout } = useAuth();
 
   return (
-    <div className="bg-gray-400 py-4 px-2 border-b-stone-600 border-2 flex justify-between items-center">
+    <div className="bg-gray-400 py-4 px-2 w-full border-b-stone-600 border-2 flex justify-between items-center">
       <div>
         <span className="font-bold text-xl">MRA</span>
       </div>
       <div className="flex gap-4">
         {isUserActive && (
           <a
-            className="px-6 py-2 mt-1 text-white bg-blue-300 rounded-lg hover:bg-blue-500"
+            className="px-4 py-1 mt-1 text-sm text-white bg-blue-300 rounded-lg hover:bg-blue-500"
             href="/preference"
           >
             Preference
@@ -21,7 +21,7 @@ const NavBar = (props) => {
         )}
         {isUserActive && (
           <a
-            className="px-6 py-2 mt-1 text-white bg-blue-300 rounded-lg hover:bg-blue-500"
+            className="px-4 py-1 mt-1 text-sm text-white bg-blue-300 rounded-lg hover:bg-blue-500"
             href="/movies"
           >
             Movies
@@ -31,14 +31,14 @@ const NavBar = (props) => {
           {isUserActive ? (
             <button
               onClick={onLogout}
-              className="px-6 py-2 mt-1 text-white bg-blue-300 rounded-lg hover:bg-blue-500"
+              className="px-4 py-1 mt-1 text-sm text-white bg-blue-300 rounded-lg hover:bg-blue-500"
               type="button"
             >
               Log out
             </button>
           ) : (
             <a
-              className="px-6 py-2 mt-1 text-white bg-blue-300 rounded-lg hover:bg-blue-500"
+              className="px-4 py-1 mt-1 text-sm text-white bg-blue-300 rounded-lg hover:bg-blue-500"
               href="/Login"
             >
               Login

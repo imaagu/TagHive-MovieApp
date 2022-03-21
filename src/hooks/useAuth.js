@@ -124,7 +124,9 @@ const useAuth = () => {
     localStorage.removeItem("user");
     setUserDetailsAvailable(false);
     setDetails(null);
+
     history.push("/Login");
+    toast.success("Logout Successful");
   };
 
   return {

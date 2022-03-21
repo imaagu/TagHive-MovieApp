@@ -127,7 +127,7 @@ const PreferenceForm = (props) => {
               <div
                 role="group"
                 aria-labelledby="my-radio-group"
-                className="flex gap-6 pb-2 items-center"
+                className="flex flex-col sm:flex-row  gap-6 pb-2 items-center"
               >
                 <label>
                   <Field type="radio" name="genre" value="horror" />
@@ -158,7 +158,7 @@ const PreferenceForm = (props) => {
               <div
                 role="group"
                 aria-labelledby="my-radio-group"
-                className="flex gap-6 pb-2 items-center"
+                className="flex gap-6  flex-col sm:flex-row pb-2 items-center"
               >
                 <label>
                   <Field type="radio" name="language" value="hindi" />
@@ -181,7 +181,7 @@ const PreferenceForm = (props) => {
               <div
                 role="group"
                 aria-labelledby="my-radio-group"
-                className="flex gap-6 pb-2 items-center"
+                className="flex gap-6 pb-2  flex-col sm:flex-row items-center"
               >
                 <label>
                   <Field type="radio" name="type" value="movie" />
